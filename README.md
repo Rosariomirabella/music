@@ -1,31 +1,31 @@
-# 🎵 Album & Artist Manager – Java + MySQL
+# 🎵 Music Manager – Java + MySQL
 
-Sistema console in Java per la gestione di un database musicale contenente informazioni su album e artisti.  
-Il progetto implementa operazioni CRUD complete tramite JDBC, seguendo l’architettura DAO.
+A console-based Java application for managing a music database containing information about albums and artists.  
+The project implements full CRUD operations via JDBC, following a DAO architecture.
 
 ---
 
-## 📁 Struttura del progetto
+## 📁 Project Structure
 
 ```
 src/
-├── app/                    → Avvio applicazione e menu interattivo (Main.java)
-├── config/                 → Connessione al database (MySQLConnection.java)
-├── dao/                    → Interfacce DAO e relative implementazioni
-├── model/                  → Classi Java che rappresentano le entità Album e Artista
-└── resources/              → (eventuali script SQL)
+├── app/                    → Application entry point and menu interface (Main.java)
+├── config/                 → Database connection setup (MySQLConnection.java)
+├── dao/                    → DAO interfaces and implementations
+├── model/                  → Java classes representing Album and Artist entities
+└── resources/              → (optional config files or SQL scripts)
 ```
 
 ---
 
 ## 🗄️ Database
 
-Il database si chiama `music` e contiene due tabelle: `album` e `artisti`.
+The database is named `music` and includes two related tables: `album` and `artisti`.
 
-- `album`: contiene informazioni su titolo, data di uscita, genere, artista collegato.
-- `artisti`: contiene nome, nazione e anno di inizio attività.
+- `album`: stores information about title, release date, genre, and associated artist.
+- `artisti`: stores artist name, country, and start year.
 
-### Esempio di schema (semplificato):
+### Example schema (simplified):
 
 ```sql
 CREATE TABLE artisti (
@@ -47,16 +47,16 @@ CREATE TABLE album (
 
 ---
 
-## ⚙️ Funzionalità
+## ⚙️ Features
 
-- Visualizzazione di tutti gli artisti o album
-- Inserimento, modifica e cancellazione di artisti e album
-- Ricerca per ID
-- Collegamento tra album e artista (relazione molti-a-uno)
+- View all artists or albums
+- Create, read, update, and delete artist and album entries
+- Search by ID
+- Relational link between albums and artists (many-to-one)
 
 ---
 
-## 🧰 Tecnologie utilizzate
+## 🧰 Technologies Used
 
 - Java
 - JDBC
@@ -66,28 +66,21 @@ CREATE TABLE album (
 
 ---
 
-## 🚀 Avvio del progetto
+## 🚀 Getting Started
 
-1. Clona il repository:
+1. Clone the repository:
 ```bash
-git clone https://github.com/tuo-username/music-crud-java.git
+git clone https://github.com/Rosariomirabella/music.git
 ```
 
-2. Crea il database `music` e importa le tabelle (vedi sezione SQL sopra).
+2. Create the `music` database and run the SQL schema (see above).
 
-3. Aggiorna i dati di connessione nel file `MySQLConnection.java`.
+3. Update the DB credentials in `MySQLConnection.java`.
 
-4. Compila ed esegui `Main.java`.
-
----
-
-## 👤 Autore
-
-Rosario Mirabella  
-[LinkedIn](https://www.linkedin.com/in/rosario-mirabella-9a70b6194) • mirabellarosario@hotmail.com
+4. Compile and run `Main.java`.
 
 ---
 
-## 📄 Licenza
+## 📄 License
 
-Questo progetto è open source e distribuito sotto licenza MIT.
+This project is open source and distributed under the MIT License.
