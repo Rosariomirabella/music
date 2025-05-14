@@ -83,4 +83,4 @@ git clone https://github.com/Rosariomirabella/music.git
 
 ## 📄 License
 
-This project is open source and distributed under the MIT License.
+This project is open source and distributed under GPL-3.0 license.
